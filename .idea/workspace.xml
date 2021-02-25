@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bbd2fae-c1ab-4814-b053-7430e784cf04" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/ServerMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/clientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyIM.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +52,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../android" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager" selected="应用程序.ClientMain">
-    <configuration name="ClientMain" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientMain" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.yyqdemao.ClientMain" />
       <module name="nettyClient" />
-      <option name="PROGRAM_PARAMETERS" value="-help -version" />
+      <option name="PROGRAM_PARAMETERS" value="-name q" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.yyqdemao.*" />
@@ -107,7 +112,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ClientMain" />
         <item itemvalue="应用程序.ServerMain" />
       </list>
     </recent_temporary>
@@ -122,6 +126,8 @@
       <updated>1614156334485</updated>
       <workItem from="1614156335871" duration="221000" />
       <workItem from="1614172940531" duration="5313000" />
+      <workItem from="1614218868947" duration="654000" />
+      <workItem from="1614219693907" duration="13803000" />
     </task>
     <servers />
   </component>
@@ -138,16 +144,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

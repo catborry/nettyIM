@@ -9,10 +9,12 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ServerMain {
 
-    private static int port=8080;
+    private static int port=8989;
 
     public static void run() throws InterruptedException {
         EventLoopGroup boss=new NioEventLoopGroup();
@@ -32,5 +34,7 @@ public class ServerMain {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
     }
 }

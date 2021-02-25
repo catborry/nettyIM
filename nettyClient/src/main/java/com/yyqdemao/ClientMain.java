@@ -13,13 +13,15 @@ import java.util.Scanner;
 
 public class ClientMain {
 
-    private static int port=8080;
+    private static int port = 8989;
 
-    private static String host="127.0.0.1";
+    private static String host = "193.112.246.3";
+
+    public static String name = "";
 
     public static void run() throws InterruptedException {
         ChannelFuture sync = null;
-        NioEventLoopGroup work=null;
+        NioEventLoopGroup work = null;
         try {
             work = new NioEventLoopGroup();
             Bootstrap b = new Bootstrap();
@@ -31,25 +33,36 @@ public class ClientMain {
             Scanner sc = new Scanner(System.in);
             while (true) {
                 String msg = sc.nextLine();
-                channel.writeAndFlush(msg + "\n\n");
+                channel.writeAndFlush("[" + name + "]:  " + msg + "\n\n");
             }
-        }finally {
+        } finally {
             work.shutdownGracefully();
         }
     }
 
     public static void main(String[] args) {
-//        if(args.length>0){
-//            for (String s:args) {
-//               if("-help".equals(s)){
-//
-//               }
-//            }
-//        }
-        try {
-            run();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        if (args.length > 0) {
+            int i=0;
+            for (String s : args) {
+                if ("-help".equals(s)) {
+                    System.out.println("-name   设置聊天昵称");
+                } else if ("-name".equals(s)) {
+                    if(args.length<=i+1){
+                        System.out.println("请正确输入昵称");
+                        return;
+                    }
+                    name = args[i+1];
+                    try {
+                        run();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                i++;
+            }
+        } else {
+
         }
+
     }
 }
