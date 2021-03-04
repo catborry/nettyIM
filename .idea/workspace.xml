@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbd2fae-c1ab-4814-b053-7430e784cf04" name="默认的" comment="增加心跳">
-      <change afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/Student.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/StudentPOJO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/Student.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/StudentPOJO.java" afterDir="false" />
+    <list default="true" id="1bbd2fae-c1ab-4814-b053-7430e784cf04" name="默认的" comment="protobuf 传输对象">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +63,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -148,6 +141,14 @@
       <workItem from="1614218868947" duration="654000" />
       <workItem from="1614219693907" duration="13803000" />
     </task>
+    <task id="LOCAL-00001" summary="protobuf 传输对象">
+      <created>1614846156925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614846156925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +157,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -165,21 +171,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="protobuf 传输对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="protobuf 传输对象" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
