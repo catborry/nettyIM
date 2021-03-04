@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbd2fae-c1ab-4814-b053-7430e784cf04" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1bbd2fae-c1ab-4814-b053-7430e784cf04" name="默认的" comment="增加心跳">
+      <change afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/Student.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/StudentPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/Student.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/StudentPOJO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/ClientMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/ServerMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/nettyServer/src/main/java/com/yyqdemao/config/NettyInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,17 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/catborry/nettyIM" />
+      </set>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final-sources.jar!/io/netty/buffer/Unpooled.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.29.Final/netty-all-4.1.29.Final-sources.jar!/io/netty/channel/group/ChannelGroup.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1ov9jWKq2m47EOUUHUgLcTaPfyF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,6 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../android" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,7 +74,13 @@
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="google.prototext.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wjh\nettyIM\nettyClient\src\main\java\com\yyqdemao\config" />
+      <recent name="D:\wjh\nettyIM\nettyServer\src\main\java\com\yyqdemao\config" />
+    </key>
   </component>
   <component name="RunManager" selected="应用程序.ClientMain">
     <configuration name="ClientMain" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
@@ -145,5 +164,25 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/nettyClient/src/main/java/com/yyqdemao/config/NettyHandler.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

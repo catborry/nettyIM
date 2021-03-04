@@ -16,6 +16,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+
     </properties>
     <dependencies>
         <dependency>
@@ -23,5 +24,16 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.29.Final</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.msgpack</groupId>-->
+<!--            <artifactId>msgpack</artifactId>-->
+<!--            <version>0.6.12</version>-->
+<!--        </dependency>-->
     </dependencies>
+
 </project>

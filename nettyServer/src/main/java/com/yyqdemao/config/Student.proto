@@ -1,0 +1,33 @@
+syntax = "proto3"; //版本
+option optimize_for = SPEED; //加快解析
+option java_outer_classname="StudentPOJO"; //生成的外部类名,也是文件名
+//protobuf 使用message 管理数据
+//protobuf 可以使用message 管理其他message
+
+message MyMessage {
+  enum DataType {
+    studentType = 0;//在proto3要求enum的编号从0开始
+    teacherTyoe = 1;
+
+  }
+  //用data_type来标识传的是哪一个枚举类型
+  DataType data_type = 1;
+  //表示每次枚举类型最多只能出现其中的一个,节省空间
+  oneof dataBody {
+    Student student = 2;
+    Teacher teacher = 3;
+  }
+}
+message Student { //会在StudentPOJO 外部类生成一个内部类Student ,他是真正发送的pojo对象
+  int32 id = 1; //Student 类中有一个属性,名字为id 类型为int32(protobuf类型) 1表示属性的序号,不是值
+  string name = 2;
+  int32 number = 3;
+  string message = 4;
+
+}
+message Teacher {
+  int32 id = 1;
+  string name = 2;
+  int32 number = 3;
+  string message = 4;
+}

@@ -1,11 +1,10 @@
 package com.yyqdemao;
 
 import com.yyqdemao.config.NettyInit;
+import com.yyqdemao.config.StudentPOJO;
 import io.netty.bootstrap.Bootstrap;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
@@ -15,7 +14,7 @@ public class ClientMain {
 
     private static int port = 8989;
 
-    private static String host = "193.112.246.3";
+    private static String host = "127.0.0.1";
 
     public static String name = "";
 
@@ -33,7 +32,8 @@ public class ClientMain {
             Scanner sc = new Scanner(System.in);
             while (true) {
                 String msg = sc.nextLine();
-                channel.writeAndFlush("[" + name + "]:  " + msg + "\n\n");
+                StudentPOJO.MyMessage stu = StudentPOJO.MyMessage.newBuilder().setDataType(StudentPOJO.MyMessage.DataType.studentType).setStudent(StudentPOJO.Student.newBuilder().setId(4).setName(name).setMessage(msg).build()).build();
+                channel.writeAndFlush(stu);
             }
         } finally {
             work.shutdownGracefully();

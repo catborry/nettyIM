@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class NettyHandler extends SimpleChannelInboundHandler<String> {
+public class NettyHandler extends SimpleChannelInboundHandler<StudentPOJO.MyMessage> {
 
     //定义一个channel组,管理所有channel
     //GlobalEventExecutor.INSTANCE 全局事件执行器,单例
@@ -26,28 +26,39 @@ public class NettyHandler extends SimpleChannelInboundHandler<String> {
     private Map<String,String> user=new HashMap<>();
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, String msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, StudentPOJO.MyMessage msg) throws Exception {
         readIdleTimes=0;
         Channel channel = ctx.channel();
-        if(user.get(String.valueOf(channel.remoteAddress()))==null){
-            // 按指定模式在字符串查找
-            String pattern ="^\\[(.*)\\]";
-            // 创建 Pattern 对象
-            Pattern r = Pattern.compile(pattern);
-            // 现在创建 matcher 对象
-            Matcher m = r.matcher(msg);
-            if(m.find()){
-                user.put(String.valueOf(channel.remoteAddress()),m.group(1));
-            }
-        }
+//        if(user.get(String.valueOf(channel.remoteAddress()))==null){
+//            // 按指定模式在字符串查找
+//            String pattern ="^\\[(.*)\\]";
+//            // 创建 Pattern 对象
+//            Pattern r = Pattern.compile(pattern);
+//            // 现在创建 matcher 对象
+//            Matcher m = r.matcher(msg);
+//            if(m.find()){
+//                user.put(String.valueOf(channel.remoteAddress()),m.group(1));
+//            }
+//        }
 //        channel.writeAndFlush(msg);
 //        channels.writeAndFlush(msg);
+        StudentPOJO.Student build=null;
+        if(msg.getDataType()==StudentPOJO.MyMessage.DataType.studentType){
+            StudentPOJO.Student student = msg.getStudent();
+            StudentPOJO.Student.Builder builder = student.toBuilder();
+            builder.setNumber(channels.size());
+            build = builder.build();
+        }else {
+            System.out.println("类型不支持");
+        }
+        StudentPOJO.MyMessage.Builder builder = msg.toBuilder();
+        StudentPOJO.MyMessage build1 = builder.setStudent(build).build();
         channels.forEach(channel1 -> {
             if (channel!=channel1){
                 //不是当前channel 直接转发
-                channel1.writeAndFlush(msg+"\n\n");
+                channel1.writeAndFlush(build1);
             }else{
-                channel1.writeAndFlush("消息发送成功\n"+msg+"\n\n");
+//                channel1.writeAndFlush("消息发送成功\n"+msg.getMessage()+"\n\n");
             }
         });
     }
@@ -118,4 +129,9 @@ public class NettyHandler extends SimpleChannelInboundHandler<String> {
             ctx.channel().close();
         }
     }
+
+//    @Override
+//    protected void channelRead0(ChannelHandlerContext ctx, StudentPOJO.Student msg) throws Exception {
+//        System.out.println("["+msg.getName()+"]:"+msg.getMessage());
+//    }
 }
